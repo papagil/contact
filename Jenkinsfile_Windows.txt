@@ -26,7 +26,7 @@ pipeline {
                 bat 'mvn package'
             }
         }
-		stage('Create Docker Image') {
+	stage('Create Docker Image') {
             steps {
                 // create docker image out of the package to be used
                 bat "docker build -t contact:${env.BUILD_NUMBER} ."
