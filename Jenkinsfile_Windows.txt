@@ -30,7 +30,7 @@ pipeline {
             steps {
                 // create docker image out of the package to be used
                 //bat "docker build -t contact:${env.BUILD_NUMBER} ."
-		bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t contact:${env.BUILD_NUMBER} .'
+		bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t contact:%{env.BUILD_NUMBER} .'
             }
         }
     }
