@@ -5,5 +5,3 @@ ENV TOMCAT_HTTP_PORT_NUMBER=8070
 COPY addressbook_main/target/addressbook.war /opt/bitnami/tomcat/webapps/
 
 EXPOSE 8070
-
-
