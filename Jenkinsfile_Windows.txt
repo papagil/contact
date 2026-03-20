@@ -29,7 +29,7 @@ pipeline {
 	stage('Create Docker Image') {
             steps {
                 // create docker image out of the package to be used
-		bat 'docker build -t contact:%BUILD_NUMBER% .'
+		bat 'docker build -t contact .'
 		//bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t contact:%{env.BUILD_NUMBER} .'
             }
         }
